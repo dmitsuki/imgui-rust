@@ -5,9 +5,9 @@ use std::slice;
 
 #[repr(C)]
 pub struct ImVector<T> {
-    size: c_int,
-    capacity: c_int,
-    data: *mut T,
+    pub size: c_int,
+    pub capacity: c_int,
+    pub data: *mut T,
 }
 
 impl<T> ImVector<T> {
